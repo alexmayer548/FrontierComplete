@@ -1,0 +1,98 @@
+.nav>li {
+  display: inline-block;
+}
+
+.nav>li>a{
+  
+  color: white;
+  font-weight: bold;
+  font-size: smaller;
+  padding:10px !important;
+}
+
+.nav>li:not(:last-child)::after{
+  content:""; 
+  border:1px solid #e2e2e2;
+  border-width: 1px 1px 0 0;
+  position:absolute; 
+  right:-3px; 
+  top:0; 
+  height:100%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 250px; 
+  display: table-cell;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scrollable {
+ overflow : scroll;
+}
+
+thead {
+color : black;
+font-weight: bold;
+}
+
+::ng-deep .mat-datepicker-input{
+outline:none;
+}
+
+td{
+font-size: smaller;
+padding:5px !important;
+padding-top:2px !important ;
+padding-bottom: 2px !important;
+white-space: nowrap;
+
+}
+
+
+.navbar{
+min-height: 30px;
+padding: 7px;
+font-size:14px;
+}
+
+.mat-drawer-inner-container{
+width: 40px !important;
+}
+
+mat-drawer{
+background-color:rgb(231, 227, 227);
+}
+
+#view{
+height: 50px !important;
+}
+
+::ng-deep .mat-ripple mat-tab-label mat-focus-indicator ng-star-inserted{
+height:30px !important;
+}
+
+::ng-deep .mat-tab-label{
+height:30px !important;
+}
+
+.mat-icon{
+vertical-align: middle;
+}
+
+.mat-drawer-content{
+overflow-x: hidden;
+}
+
+.table{
+overflow: auto !important;
+}
